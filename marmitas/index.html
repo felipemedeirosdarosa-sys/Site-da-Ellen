@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio de marmitas, lanches e sopas da Ellen Contreras.">
+  <title>Cardápio | Ellen Contreras</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="marmitas.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <a href="../index.html" class="logo">
+      <span>Ellen</span>
+      <strong>Contreras</strong>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#regras">Como funciona</a>
+      <a href="../index.html">Site principal</a>
+    </nav>
+
+    <button class="cart-button" id="openCart" type="button">
+      <span>Meu carrinho</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <span class="eyebrow">ELLEN CONTRERAS • GASTRONOMIA & NUTRIÇÃO</span>
+
+        <h1>Comida de verdade, <em>pronta para sua rotina.</em></h1>
+
+        <p>
+          Marmitas, lanches e preparações feitas com cuidado
+          para deixar seu dia mais prático e gostoso.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn-primary" href="#cardapio">Explorar cardápio →</a>
+          <a class="btn-secondary" href="#regras">Como pedir</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img
+          src="../Imagens/Imagens ellen/Marmitas variadas.jpg"
+          alt="Marmitas da Ellen Contreras"
+        >
+      </div>
+
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container benefits-grid">
+
+      <div class="benefit">
+        <span class="benefit-number">01</span>
+        <div>
+          <h3>Ingredientes selecionados</h3>
+          <p>Preparações feitas com cuidado.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-number">02</span>
+        <div>
+          <h3>Praticidade</h3>
+          <p>Mais facilidade para organizar a semana.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-number">03</span>
+        <div>
+          <h3>Do seu jeito</h3>
+          <p>Possibilidade de adaptar porções ao plano alimentar.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section products-section" id="cardapio">
+    <div class="container">
+
+      <div class="section-heading">
+        <div>
+          <span class="section-label">CARDÁPIO COMPLETO</span>
+          <h2>Escolha suas <em>favoritas.</em></h2>
+        </div>
+
+        <p>
+          Veja todas as opções abaixo ou use os filtros
+          para encontrar o que procura.
+        </p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="todos" type="button">Todos</button>
+        <button class="filter" data-filter="frango" type="button">Frango</button>
+        <button class="filter" data-filter="carne" type="button">Carne</button>
+        <button class="filter" data-filter="peixe" type="button">Peixe</button>
+        <button class="filter" data-filter="lanches" type="button">Lanches</button>
+        <button class="filter" data-filter="sopas" type="button">Sopas e cremes</button>
+      </div>
+
+      <p class="results-label" id="resultsLabel"></p>
+
+      <div class="products-grid" id="productsGrid"></div>
+
+    </div>
+  </section>
+
+  <section class="section how-section" id="regras">
+    <div class="container">
+
+      <div class="section-heading">
+        <div>
+          <span class="section-label">ANTES DE PEDIR</span>
+          <h2>Como <em>funciona?</em></h2>
+        </div>
+
+        <p>Informações importantes sobre porções, pedidos e pagamentos.</p>
+      </div>
+
+      <div class="rules-grid">
+
+        <article class="rule-card">
+          <span>01</span>
+          <h3>Porções tradicionais</h3>
+          <p>100 g de carboidrato, 120 g de proteína, 70 g de leguminosa e 70 g de legumes.</p>
+        </article>
+
+        <article class="rule-card">
+          <span>02</span>
+          <h3>Pedido mínimo</h3>
+          <p>A partir de 5 marmitas com a mesma opção de proteína. A composição será confirmada com a Ellen.</p>
+        </article>
+
+        <article class="rule-card">
+          <span>03</span>
+          <h3>Desconto nas marmitas</h3>
+          <p>5% a partir de 15 marmitas, para pagamentos via Pix ou dinheiro.</p>
+        </article>
+
+        <article class="rule-card">
+          <span>04</span>
+          <h3>Desconto nos lanches</h3>
+          <p>5% ao escolher 4 opções diferentes ou mais, para pagamentos via Pix ou dinheiro.</p>
+        </article>
+
+        <article class="rule-card">
+          <span>05</span>
+          <h3>Porções personalizadas</h3>
+          <p>As marmitas também podem seguir as quantidades específicas do seu plano alimentar. Consulte valores.</p>
+        </article>
+
+        <article class="rule-card">
+          <span>06</span>
+          <h3>Pagamento</h3>
+          <p>Pix, dinheiro, débito e crédito. Parcelamentos no cartão podem ter taxa.</p>
+        </article>
+
+      </div>
+
+      <p class="rules-note">
+        Escondidinhos: 300 g de moranga ou batata, 120 g de proteína,
+        uma fatia de muçarela e queijo ralado na finalização.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-content">
+      <span>FEITO COM CARINHO</span>
+      <h2>Sua alimentação pode ser mais prática.</h2>
+      <p>Escolha suas opções e envie o pedido diretamente pelo WhatsApp.</p>
+      <a href="#cardapio" class="btn-light">Montar meu pedido →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FUNDO ESCURO DO CARRINHO -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- CARRINHO -->
+<aside class="cart" id="cart" aria-label="Carrinho de compras">
+
+  <div class="cart-header">
+    <div>
+      <span>SEU PEDIDO</span>
+      <h2>Meu carrinho</h2>
+    </div>
+
+    <button
+      class="close-cart"
+      id="closeCart"
+      type="button"
+      aria-label="Fechar carrinho"
+    >✕</button>
+  </div>
+
+  <!-- PRODUTOS ESCOLHIDOS -->
+  <div class="cart-items" id="cartItems">
+    <div class="empty-cart">Seu carrinho está vazio.</div>
+  </div>
+
+  <div class="cart-footer">
+
+    <!-- INFORMAÇÕES DO CLIENTE -->
+    <details class="customer-fields" id="customerFields">
+      <summary>Informações para finalizar o pedido</summary>
+
+      <div class="customer-fields-content">
+
+        <p>Preencha seus dados somente na hora de finalizar.</p>
+
+        <label for="customerName">Seu nome *</label>
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Digite seu nome"
+          autocomplete="name"
+          maxlength="100"
+        >
+
+        <label for="deliveryType">Como deseja receber? *</label>
+        <select id="deliveryType">
+          <option value="">Selecione uma opção</option>
+          <option value="Entrega">Entrega</option>
+          <option value="Retirada">Retirada</option>
+        </select>
+
+        <!-- ENDEREÇO DE ENTREGA -->
+        <div id="addressField" hidden>
+
+          <label for="customerAddress">Rua ou avenida *</label>
+          <input
+            type="text"
+            id="customerAddress"
+            placeholder="Ex.: Rua das Flores"
+            autocomplete="address-line1"
+            maxlength="150"
+          >
+
+          <label for="customerNumber">Número *</label>
+          <input
+            type="text"
+            id="customerNumber"
+            placeholder="Ex.: 123"
+            maxlength="20"
+          >
+
+          <label class="no-number-option" for="noNumber">
+            <input type="checkbox" id="noNumber">
+            Minha casa não tem número
+          </label>
+
+          <label for="customerComplement">Complemento</label>
+          <input
+            type="text"
+            id="customerComplement"
+            placeholder="Ex.: apartamento 302, bloco B (opcional)"
+            autocomplete="address-line2"
+            maxlength="100"
+          >
+
+          <label for="customerNeighborhood">Bairro *</label>
+          <input
+            type="text"
+            id="customerNeighborhood"
+            placeholder="Seu bairro"
+            maxlength="100"
+          >
+
+          <label for="customerCity">Cidade *</label>
+          <input
+            type="text"
+            id="customerCity"
+            placeholder="Sua cidade"
+            autocomplete="address-level2"
+            maxlength="100"
+          >
+
+          <label for="customerReference">Ponto de referência</label>
+          <input
+            type="text"
+            id="customerReference"
+            placeholder="Ex.: perto do mercado (opcional)"
+            maxlength="150"
+          >
+
+        </div>
+
+        <label for="customerNotes">Observações (opcional)</label>
+        <textarea
+          id="customerNotes"
+          rows="2"
+          placeholder="Ex.: sem cebola, preferência de acompanhamento..."
+          maxlength="500"
+        ></textarea>
+
+        <p
+          id="customerError"
+          class="customer-error"
+          role="alert"
+          hidden
+        ></p>
+
+      </div>
+    </details>
+
+    <!-- FORMA DE PAGAMENTO -->
+    <label class="payment-label" for="paymentMethod">
+      Forma de pagamento
+    </label>
+
+    <select class="payment-select" id="paymentMethod">
+      <option value="pix">Pix</option>
+      <option value="dinheiro">Dinheiro</option>
+      <option value="debito">Cartão de débito</option>
+      <option value="credito">Cartão de crédito</option>
+    </select>
+
+    <!-- RESUMO E TOTAL -->
+    <div class="cart-summary">
+
+      <div>
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">R$ 0,00</strong>
+      </div>
+
+      <div>
+        <span>Desconto estimado</span>
+        <strong id="cartDiscount">R$ 0,00</strong>
+      </div>
+
+      <div class="summary-total">
+        <span>Total estimado</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+
+    </div>
+
+    <!-- AVISO E FINALIZAÇÃO -->
+    <p class="cart-warning" id="cartWarning"></p>
+
+    <button class="checkout-button" id="checkout" type="button">
+      Finalizar pelo WhatsApp →
+    </button>
+
+    <p class="cart-note">
+      O pedido e os valores serão confirmados pela Ellen.
+      Entrega, adaptações e eventuais taxas não estão incluídas.
+    </p>
+
+  </div>
+</aside>
+
+<footer class="footer">
+  <div class="container footer-content">
+
+    <a href="../index.html" class="footer-logo">
+      <span>Ellen</span>
+      <strong>Contreras</strong>
+    </a>
+
+    <p>Comida saudável pro seu dia.</p>
+
+    <a href="../index.html">Voltar ao site principal →</a>
+
+  </div>
+</footer>
+
+<script src="marmitas.js"></script>
+
+</body>
+</html>
